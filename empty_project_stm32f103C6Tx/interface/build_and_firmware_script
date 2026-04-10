@@ -1,0 +1,47 @@
+#!/bin/bash
+
+echo -e "\033[92m$PROJECT_NAME\033[0m"
+
+DIR_NAME=$(pwd)
+
+function check_compilation_update
+{
+	NEW_HASH=$(find "$DIR_NAME/build/" -type f -exec sha256sum {} \; |  awk '{print $1}' | sort -d | sha256sum | cut -d ' ' -f 1)
+	PREV_HASH=$(cat $DIR_NAME/interface/previous_hash)
+	if [[ "$NEW_HASH" == "$PREV_HASH" ]]
+	then
+		echo -e "\033[91mFiles the same - no need to flash the device again!\033[0m"
+		exit
+	else
+		echo -e "\033[92mFiles different, try to firmware...\033[0m"
+	fi
+	echo $NEW_HASH &> $DIR_NAME/interface/previous_hash
+}
+
+check_compilation_update
+
+echo -e "\033[33mTry to firmware with software reset\033[0m"
+openocd -f interface/stlink.cfg -f $TARGET_CFG -c "program build/$PROJECT_NAME.elf verify exit reset"
+command_result=$?
+
+if [ $command_result == 0 ]
+then
+	echo -e "\033[92mFirmware status OK!\033[0m"
+else
+	echo -e "\033[91mCannot firmware with software reset\033[0m"
+	echo -e "\033[33mTry to firmwate with hardware reset. Make sure that NRST pin connected to MCU\033[0m"
+	openocd -f interface/stlink.cfg -f $TARGET_CFG -f interface/reset.cfg -c init -c "reset halt" -c "program build/$PROJECT_NAME.elf verify" -c exit && openocd -f interface/stlink.cfg -f $TARGET_CFG -f interface/reset.cfg -c init -c exit
+	command_result=$?
+	if [ $command_result == 0 ]
+	then
+		echo -e "\033[92mFirmware status OK!\033[0m"
+	else
+		echo -e "\033[91mCannot firmware with software and hardware reset. Firmware status WRONG!\033[0m"
+		echo -e "\033[33mMake sure that all connections right\033[0m"
+	fi
+fi
+
+if [ $command_result != 0 ]
+then
+	echo "" &> $DIR_NAME/interface/previous_hash
+fi

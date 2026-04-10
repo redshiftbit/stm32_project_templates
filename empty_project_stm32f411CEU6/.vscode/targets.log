@@ -1,0 +1,593 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Jun 17 15:53:22 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from 'Makefile', line 51)
+PREFIX = arm-none-eabi-
+# automatic
+?F = $(notdir $?)
+# environment
+PAPERSIZE = a4
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# makefile (from 'Makefile', line 124)
+LDSCRIPT = STM32F103C8Tx_FLASH.ld
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# makefile (from 'Makefile', line 16)
+TARGET = empty_project
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+PLATFORMIO_IDE = 2.4.3
+# makefile (from 'Makefile', line 85)
+AS_DEFS = 
+# makefile (from 'Makefile', line 94)
+AS_INCLUDES = 
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/krinton/STM32/empty_project
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 66)
+BIN = $(CP) -O binary -S
+# environment
+VTE_VERSION = 6003
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from 'Makefile', line 63)
+SZ = $(PREFIX)size
+# environment
+JOURNAL_STREAM = 8:48345
+# makefile (from 'Makefile', line 117)
+CFLAGS = $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"$(@:%.o=%.d)"
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# makefile (from 'build/startup_stm32f103xb.d', line 1)
+MAKEFILE_LIST :=  Makefile build/RCC_PLL.d build/USART.d build/core_cm3.d build/main.d build/system_stm32f10x.d build/startup_stm32f103xb.d
+# automatic
+@F = $(notdir $@)
+# makefile (from 'Makefile', line 62)
+CP = $(PREFIX)objcopy
+# environment
+IM_CONFIG_PHASE = 1
+# environment
+QT_IM_MODULE = ibus
+# makefile (from 'Makefile', line 23)
+DEBUG = 1
+# environment
+USERNAME = krinton
+# environment
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=66d63952002a71c47093ae0362ac17f2
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'Makefile', line 61)
+AS = $(PREFIX)gcc -x assembler-with-cpp
+# environment
+_ = /usr/bin/code
+# environment
+MANAGERPID = 1720
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = ru_RU.UTF-8
+# environment
+VSCODE_CWD = /home/krinton/STM32/empty_project
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+NO_PROXY = 127.0.0.1
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/Krinton-PC:@/tmp/.ICE-unix/2334,unix/Krinton-PC:/tmp/.ICE-unix/2334
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = 8f81cc78195b4bedb67767fb8c808cbe
+# makefile (from 'Makefile', line 129)
+LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :1
+# makefile (from 'Makefile', line 44)
+ASM_SOURCES = startup_stm32f103xb.s
+# makefile (from 'Makefile', line 25)
+OPT = -Og
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/krinton/STM32/empty_project
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 2282
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/krinton
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/krinton/.config/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
+# environment
+LOGNAME = krinton
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
++F = $(notdir $+)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'Makefile', line 88)
+C_DEFS = -DUSE_CMSIS_DRIVER -DSTM32F103xx
+# environment
+LC_TIME = ru_RU.UTF-8
+# environment
+PLATFORMIO_PATH = /home/krinton/.platformio/penv/bin:/home/krinton/.platformio/penv:/home/krinton/.platformio/python3/bin:/home/krinton/.local/bin:/home/krinton/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/krinton/x-tools/arm-cortexa9_neon-linux-gnueabihf/bin
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+PATH = /home/krinton/.local/bin:/home/krinton/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/krinton/x-tools/arm-cortexa9_neon-linux-gnueabihf/bin
+# environment
+SHLVL = 1
+# makefile (from 'Makefile', line 65)
+HEX = $(CP) -O ihex
+# makefile (from 'Makefile', line 60)
+CC = $(PREFIX)gcc
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# makefile (from 'Makefile', line 32)
+BUILD_DIR = build
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f3de6759-2dfd-4ed4-9b84-a542b028c8e2.sock
+# makefile (from 'Makefile', line 107)
+ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = krinton
+# environment
+LC_MONETARY = ru_RU.UTF-8
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from 'Makefile', line 72)
+CPU = -mcpu=cortex-m3
+# environment
+LC_TELEPHONE = ru_RU.UTF-8
+# default
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 128)
+LIBDIR = 
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_US:en
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-1dec8c52-1.68.0-main.sock
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = ru_RU.UTF-8
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from 'Makefile', line 81)
+MCU = $(CPU) -mthumb $(FPU) $(FLOAT-ABI)
+# makefile (from 'Makefile', line 97)
+C_INCLUDES = -ICode -ICode/inc -ICode/src -ICMSIS -ICMSIS/inc -ICMSIS/src 
+# default
+MAKEFILES := 
+# environment
+LC_NUMERIC = ru_RU.UTF-8
+# automatic
+<F = $(notdir $<)
+# environment
+PLATFORMIO_CALLER = vscode
+# environment
+LC_MEASUREMENT = ru_RU.UTF-8
+# environment
+LC_ALL = C
+# environment
+DBUS_STARTER_BUS_TYPE = session
+# makefile (from 'Makefile', line 127)
+LIBS = -lc -lm -lnosys 
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/a3bbad90_8f5d_4b9b_9a6e_840be1c173bd
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 38)
+C_SOURCES = Code/src/main.c CMSIS/src/core_cm3.c CMSIS/src/system_stm32f10x.c
+# environment
+GNOME_TERMINAL_SERVICE = :1.132
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+LC_IDENTIFICATION = ru_RU.UTF-8
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 142)
+OBJECTS = $(addprefix $(BUILD_DIR)/,$(notdir $(C_SOURCES:.c=.o))) $(addprefix $(BUILD_DIR)/,$(notdir $(ASM_SOURCES:.s=.o)))
+# environment
+LC_ADDRESS = ru_RU.UTF-8
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 61533
+ 
+# environment
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=66d63952002a71c47093ae0362ac17f2
+# variable set hash-table stats:
+# Load=143/1024=14%, Rehash=0, Collisions=28/231=12%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2070, inode 20460841): 16 files, no impossibilities.
+# build (device 2070, inode 27526498): 23 files, no impossibilities.
+# Code/src (device 2070, inode 27533368): No files, no impossibilities so far.
+# CMSIS/src (device 2070, inode 27539909): 4 files, no impossibilities.
+
+# 43 files, no impossibilities in 4 directories.
+
+# Implicit Rules
+
+build/%.o: %.c Makefile | build
+#  recipe to execute (from 'Makefile', line 146):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+
+build/%.o: %.s Makefile | build
+#  recipe to execute (from 'Makefile', line 149):
+	$(AS) -c $(CFLAGS) $< -o $@
+
+build/%.hex: build/%.elf | build
+#  recipe to execute (from 'Makefile', line 156):
+	$(HEX) $< $@
+	
+
+build/%.bin: build/%.elf | build
+#  recipe to execute (from 'Makefile', line 159):
+	$(BIN) $< $@	
+	
+
+# 4 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+build/core_cm3.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-17 15:33:08.052699671
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+CMSIS/src/system_stm32f10x.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/empty_project.elf: build/main.o build/core_cm3.o build/system_stm32f10x.o build/startup_stm32f103xb.o Makefile
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-17 15:34:00.696699166
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/14=0%
+#  recipe to execute (from 'Makefile', line 152):
+	$(CC) $(OBJECTS) $(LDFLAGS) -o $@
+	$(SZ) $@
+
+build/main.o: Code/src/main.c Makefile Code/src/main.c Code/inc/main.h CMSIS/inc/stm32f10x.h CMSIS/inc/core_cm3.h CMSIS/inc/system_stm32f10x.h Code/inc/RCC_PLL.h Code/inc/main.h Code/inc/USART.h | build
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+#  Last modified 2022-06-17 15:34:00.664699166
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := build/main.o
+# automatic
+# % := 
+# automatic
+# * := main
+# automatic
+# + := Code/src/main.c Makefile Code/src/main.c Code/inc/main.h CMSIS/inc/stm32f10x.h CMSIS/inc/core_cm3.h CMSIS/inc/system_stm32f10x.h Code/inc/RCC_PLL.h Code/inc/main.h Code/inc/USART.h
+# automatic
+# | := build
+# automatic
+# < := Code/src/main.c
+# automatic
+# ^ := Code/src/main.c Makefile Code/inc/main.h CMSIS/inc/stm32f10x.h CMSIS/inc/core_cm3.h CMSIS/inc/system_stm32f10x.h Code/inc/RCC_PLL.h Code/inc/USART.h
+# automatic
+# ? := Code/src/main.c Makefile Code/inc/main.h
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/26=4%
+#  recipe to execute (from 'Makefile', line 146):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+
+all: build/empty_project.elf build/empty_project.hex build/empty_project.bin
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/14=0%
+
+# Not a target:
+build/empty_project.bin:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Code/inc/RCC_PLL.h:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-20 12:14:14
+#  File has been updated.
+#  Successfully updated.
+
+build/USART.o: Code/src/USART.c Code/inc/USART.h Code/inc/main.h CMSIS/inc/stm32f10x.h CMSIS/inc/core_cm3.h CMSIS/inc/system_stm32f10x.h Code/inc/RCC_PLL.h Code/inc/USART.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/startup_stm32f103xb.o: startup_stm32f103xb.s
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+CMSIS/inc/stm32f10x.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-04-19 22:35:44
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/system_stm32f10x.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-17 15:33:08.096699671
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-17 15:53:21.116688031
+#  File has been updated.
+#  Successfully updated.
+
+build/core_cm3.o: CMSIS/src/core_cm3.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build:
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-17 15:34:00.700699166
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 162):
+	mkdir $@		
+
+prog: build/empty_project.elf
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 176):
+	openocd -f interface/stlink-v2.cfg -f target/stm32f1x.cfg -c "program build/$(TARGET).elf verify exit reset"
+
+# Not a target:
+Code/src/RCC_PLL.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/RCC_PLL.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-17 15:33:08.020699671
+#  File has been updated.
+#  Successfully updated.
+
+Code/inc/main.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-17 15:53:22.784688015
+#  File has been updated.
+#  Successfully updated.
+
+build/system_stm32f10x.o: CMSIS/src/system_stm32f10x.c CMSIS/inc/stm32f10x.h CMSIS/inc/core_cm3.h CMSIS/inc/system_stm32f10x.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+CMSIS/inc/core_cm3.h:
+#  Implicit rule search has been done.
+#  Last modified 2011-02-09 13:59:36
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Code/inc/USART.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-22 12:21:21.608511
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 168):
+	-rm -fR $(BUILD_DIR)
+
+# Not a target:
+Code/src/main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-17 15:53:22.784688015
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/main.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-17 15:34:00.648699166
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+CMSIS/src/core_cm3.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/RCC_PLL.o: Code/src/RCC_PLL.c Code/inc/RCC_PLL.h Code/inc/main.h CMSIS/inc/stm32f10x.h CMSIS/inc/core_cm3.h CMSIS/inc/system_stm32f10x.h Code/inc/RCC_PLL.h Code/inc/USART.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+CMSIS/inc/system_stm32f10x.h:
+#  Implicit rule search has been done.
+#  Last modified 2011-03-10 09:51:22
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Code/src/USART.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/empty_project.hex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/USART.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-17 15:33:07.984699672
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/startup_stm32f103xb.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-17 15:33:08.120699671
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+startup_stm32f103xb.s:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=34/1024=3%, Rehash=0, Collisions=11/135=8%
+# VPATH Search Paths
+
+vpath %.c CMSIS/src:Code/src
+
+# 1 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 82 / storage = 1200 B / avg = 14 B
+# current buf: size = 8162 B / used = 1200 B / count = 82 / avg = 14 B
+
+# strcache performance: lookups = 202 / hit rate = 59%
+# hash-table stats:
+ 
+# Load=82/8192=1%, Rehash=0, Collisions=3/202=1%
+# Finished Make data base on Fri Jun 17 15:53:22 2022
+
+ 

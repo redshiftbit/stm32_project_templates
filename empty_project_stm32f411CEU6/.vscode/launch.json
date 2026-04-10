@@ -1,0 +1,22 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "openocd-debug",
+			"type": "cortex-debug",
+			"request": "launch",
+            "showDevDebugOutput": "raw",
+			"cwd": "${workspaceFolder}",
+			"servertype": "openocd",
+			"interface": "swd",
+			"runToEntryPoint": "main.c",
+			"executable": "./build/empty_project.elf",
+			"svdFile": "STM32F411xx.svd",
+			"configFiles": [
+				"interface/stlink-v2.cfg",
+				"target/stm32f4x.cfg"
+			],
+			"preLaunchTask": "Build"
+		}
+	]
+}

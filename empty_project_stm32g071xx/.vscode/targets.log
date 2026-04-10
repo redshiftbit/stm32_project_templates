@@ -1,0 +1,438 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Jul 27 13:41:20 2023
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# makefile (from 'Makefile', line 124)
+LDSCRIPT = STM32F103C8Tx_FLASH.ld
+# environment
+XDG_SESSION_TYPE = x11
+# makefile (from 'Makefile', line 16)
+TARGET = empty_project
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
+# makefile (from 'Makefile', line 85)
+AS_DEFS = 
+# makefile (from 'Makefile', line 94)
+AS_INCLUDES = 
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/ubuntu2004/STM32/empty_project_stm32g0
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 66)
+BIN = $(CP) -O binary -S
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","osLocale":"en-ie","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from 'Makefile', line 63)
+SZ = $(PREFIX)size
+# environment
+JOURNAL_STREAM = 8:35245
+# makefile (from 'Makefile', line 117)
+CFLAGS = $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"$(@:%.o=%.d)"
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# makefile (from 'Makefile', line 62)
+CP = $(PREFIX)objcopy
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# makefile (from 'Makefile', line 23)
+DEBUG = 1
+# environment
+USERNAME = ubuntu2004
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# makefile (from 'Makefile', line 61)
+AS = $(PREFIX)gcc -x assembler-with-cpp
+# environment
+_ = /usr/share/code/code
+# environment
+MANAGERPID = 1371
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /home/ubuntu2004
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /opt/hisi-linux/x86-arm/arm-himix100-linux/bin:/opt/hisi-linux/x86-arm/arm-himix100-linux/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/ubuntu2004:@/tmp/.ICE-unix/1637,unix/ubuntu2004:/tmp/.ICE-unix/1637
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = b912c149d1134ad9bd2c2d305f3476d4
+# makefile (from 'Makefile', line 129)
+LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 34170
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# makefile (from 'Makefile', line 44)
+ASM_SOURCES = startup_stm32f103xb.s
+# makefile (from 'Makefile', line 25)
+OPT = -Og
+# environment
+PWD = /home/ubuntu2004/STM32/empty_project_stm32g0
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 1589
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/ubuntu2004
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CODE_CACHE_PATH = /home/ubuntu2004/.config/Code/CachedData/74f6148eb9ea00507ec113ec51c489d6ffb4b771
+# environment
+LOGNAME = ubuntu2004
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from 'Makefile', line 51)
+PREFIX = arm-none-eabi-
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'Makefile', line 88)
+C_DEFS = -DUSE_CMSIS_DRIVER -DSTM32F103xx
+# environment
+MAKELEVEL := 0
+# makefile (from 'Makefile', line 97)
+C_INCLUDES = -ICode -ICode/inc -ICode/src -ICMSIS -ICMSIS/inc -ICMSIS/src 
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 65)
+HEX = $(CP) -O ihex
+# makefile (from 'Makefile', line 60)
+CC = $(PREFIX)gcc
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# makefile (from 'Makefile', line 32)
+BUILD_DIR = build
+# makefile (from 'Makefile', line 107)
+ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = ubuntu2004
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from 'Makefile', line 72)
+CPU = -mcpu=cortex-m3
+# default
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 128)
+LIBDIR = 
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_IE:en
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-e63db979-1.80-main.sock
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# automatic
++F = $(notdir $+)
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from 'Makefile', line 81)
+MCU = $(CPU) -mthumb $(FPU) $(FLOAT-ABI)
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# makefile (from 'Makefile', line 127)
+LIBS = -lc -lm -lnosys 
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 38)
+C_SOURCES = Code/src/main.c CMSIS/src/core_cm3.c CMSIS/src/system_stm32f10x.c
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 142)
+OBJECTS = $(addprefix $(BUILD_DIR)/,$(notdir $(C_SOURCES:.c=.o))) $(addprefix $(BUILD_DIR)/,$(notdir $(ASM_SOURCES:.s=.o)))
+# environment
+LANG = C
+# environment
+VSCODE_PID = 34170
+# variable set hash-table stats:
+# Load=119/1024=12%, Rehash=0, Collisions=13/184=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2053, inode 1360795): 14 files, no impossibilities.
+# build: could not be stat'd.
+# Code/src (device 2053, inode 1360805): 2 files, no impossibilities so far.
+# CMSIS/src (device 2053, inode 1360802): 4 files, no impossibilities.
+
+# 20 files, no impossibilities in 4 directories.
+
+# Implicit Rules
+
+build/%.o: %.c Makefile | build
+#  recipe to execute (from 'Makefile', line 146):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+
+build/%.o: %.s Makefile | build
+#  recipe to execute (from 'Makefile', line 149):
+	$(AS) -c $(CFLAGS) $< -o $@
+
+build/%.hex: build/%.elf | build
+#  recipe to execute (from 'Makefile', line 156):
+	$(HEX) $< $@
+	
+ 
+
+build/%.bin: build/%.elf | build
+#  recipe to execute (from 'Makefile', line 159):
+	$(BIN) $< $@	
+	
+
+# 4 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+build/empty_project.elf: build/main.o build/core_cm3.o build/system_stm32f10x.o build/startup_stm32f103xb.o Makefile
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 152):
+	$(CC) $(OBJECTS) $(LDFLAGS) -o $@
+	$(SZ) $@
+
+build/main.o: Code/src/main.c Makefile | build
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 146):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+
+all: build/empty_project.elf build/empty_project.hex build/empty_project.bin
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+build/empty_project.bin:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/startup_stm32f103xb.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-17 16:53:21.116688
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/core_cm3.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := build
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/12=8%
+#  recipe to execute (from 'Makefile', line 162):
+	mkdir $@		
+
+prog: build/empty_project.elf
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 176):
+	openocd -f interface/stlink-v2.cfg -f target/stm32f1x.cfg -c "program build/$(TARGET).elf verify exit reset"
+
+# Not a target:
+build/system_stm32f10x.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 168):
+	-rm -fR $(BUILD_DIR)
+
+# Not a target:
+Code/src/main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-17 16:55:36.900686
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/empty_project.hex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=15/1024=1%, Rehash=0, Collisions=2/52=4%
+# VPATH Search Paths
+
+vpath %.c CMSIS/src:Code/src
+
+# 1 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 42 / storage = 549 B / avg = 13 B
+# current buf: size = 8162 B / used = 549 B / count = 42 / avg = 13 B
+
+# strcache performance: lookups = 78 / hit rate = 46%
+# hash-table stats:
+# Load=42/8192=1%, Rehash=0, Collisions=2/78=3%
+# Finished Make data base on Thu Jul 27 13:41:20 2023
+
+ 
