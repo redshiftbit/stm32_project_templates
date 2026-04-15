@@ -10,7 +10,7 @@
 			"servertype": "openocd",
 			"interface": "swd",
 			"runToEntryPoint": "main.c",
-			"executable": "./build/empty_project.elf",
+			"executable": "./build/${workspaceFolder}.elf",
 			"svdFile": "STM32F411xx.svd",
 			"configFiles": [
 				"interface/stlink-v2.cfg",

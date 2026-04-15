@@ -4,8 +4,9 @@ This repository include my set of templates for several STM32 mcu. Templates are
 
 ## Key features of the templates
 
-*-* a script is used to build the project. In addition to building and flashing the microcontroller, it also checks for changes to the compiled firmware and prevents flashing the controller if the firmware file hasn't changed since the initial build;  
+*-* a script "./interface/build_and_firmware_script" is used to build the project. In addition to building and flashing the microcontroller, it also checks for changes to the compiled firmware and prevents flashing the mcu if the firmware file hasn't changed since the initial build;  
 *-* debugging support;  
+*-* CMSIS only;  
 *-* "OpenOCD" is used to flash the microcontroller. It supports two operating modes:
 
 - programming via the SWD interface with a software reset;

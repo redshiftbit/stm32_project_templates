@@ -10,7 +10,7 @@
 			"servertype": "openocd",
 			"interface": "swd",
 			"runToEntryPoint": "main.c",
-			"executable": "./build/empty_project_stm32f103CBTx.elf",
+			"executable": "./build/${workspaceFolder}.elf",
 			"svdFile": "STM32F103.svd",
 			"configFiles": [
 				"interface/stlink-v2.cfg",
